@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Photography - Portfolio</title>
+    <link rel="stylesheet" href="../styles.css">
+    <link rel="stylesheet" href="projects.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <nav>
+        <div class="logo">
+            <h1><a href="../index.html">My Portfolio</a></h1>
+        </div>
+        <div class="burger">☰</div>
+        <ul class="nav-links">
+            <li><a href="../index.html#about">About</a></li>
+            <li><a href="coding.html">Coding</a></li>
+            <li><a href="3dprinting.html">3D Printing</a></li>
+            <li><a href="photography.html" class="active">Photography</a></li>
+        </ul>
+    </nav>
+
+    <main class="container">
+        <section class="project-header">
+            <h1>Photography Portfolio</h1>
+            <p>A collection of my photographic work across different styles and subjects. Each image tells its own story and showcases different techniques in photography.</p>
+        </section>
+
+        <section class="photo-categories">
+            <div class="category-filters">
+                <button class="filter-btn active" data-category="all">All</button>
+                <button class="filter-btn" data-category="landscape">Landscape</button>
+                <button class="filter-btn" data-category="portrait">Portrait</button>
+                <button class="filter-btn" data-category="street">Street</button>
+            </div>
+        </section>
+
+        <section class="photo-grid">
+            <!-- Photo Card Template -->
+            <article class="photo-card" data-category="landscape">
+                <div class="photo-image">
+                    <img src="https://lh3.googleusercontent.com/pw/AP1GczMS4GaF9iI7TIYLNtFe-X7TVXNRz-8ZQjLKr_5fY4MYbfqyEd--EgmU2CPXlkumtnBP2yA24nlbRsSdaZ_TGZpdSHYDVues01VyacO5Xvjj_K7bddWSZ4X-f0kEuaIKkFGTQcfgLX_9UMdNkEcszGUL=w1620-h911-s-no-gm?authuser=0" alt="Landscape Photo">
+                </div>
+                <div class="photo-content">
+                    <h2>Photo Title</h2>
+                    <div class="photo-tags">
+                        <span class="tag">Landscape</span>
+                        <span class="tag">Nature</span>
+                        <span class="tag">Sunset</span>
+                    </div>
+                    <p>Description of the photo, including location, camera settings, and the story behind the image.</p>
+                    <div class="photo-specs">
+                        <div class="spec-item">
+                            <strong>Camera:</strong> Model
+                        </div>
+                        <div class="spec-item">
+                            <strong>Lens:</strong> XXmm
+                        </div>
+                        <div class="spec-item">
+                            <strong>Settings:</strong> f/X.X, 1/XXX, ISO XXX
+                        </div>
+                    </div>
+                </div>
+            </article>
+
+            <article class="photo-card" data-category="landscape">
+                <div class="photo-image">
+                    <img src="https://lh3.googleusercontent.com/pw/AP1GczO22CH-J5GtXvS3yXhpnrDDPXGBr0aup34yjYfJKKwQPI_TiURpjEMFSBSG8-tHG8mX1KQ_mdDolfISXDzsH_Bos1T-wvJmar9cOD2wfqCgGSXQqhuLNR17nbSWzdfV3eMff4tsslWbaL6PuMkDOv_Y=w1620-h911-s-no-gm?authuser=0" alt="Landscape Photo">
+                </div>
+                <div class="photo-content">
+                    <h2>Photo Title</h2>
+                    <div class="photo-tags">
+                        <span class="tag">Landscape</span>
+                        <span class="tag">Nature</span>
+                        <span class="tag">Floral</span>
+                    </div>
+                    <p>Flowers</p>
+                    <div class="photo-specs">
+                        <div class="spec-item">
+                            <strong>Camera:</strong> Model
+                        </div>
+                        <div class="spec-item">
+                            <strong>Lens:</strong> XXmm
+                        </div>
+                        <div class="spec-item">
+                            <strong>Settings:</strong> f/X.X, 1/XXX, ISO XXX
+                        </div>
+                    </div>
+                </div>
+            </article>
+            <!-- Add more photo cards as needed -->
+        </section>
+    </main>
+
+    <footer>
+        <p>© 2025 My Portfolio. All rights reserved.</p>
+    </footer>
+
+    <script src="../script.js"></script>
+    <script src="photography.js"></script>
+</body>
+</html> 
