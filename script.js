@@ -74,7 +74,10 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 
     // Observe about section
-    observer.observe(document.querySelector('.about-content'));
+    const aboutSection = document.querySelector('.about-content');
+    if (aboutSection) {
+        observer.observe(aboutSection);
+    }
 
     // Add hover effect to category cards
     document.querySelectorAll('.category-card').forEach(card => {

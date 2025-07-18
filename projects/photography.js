@@ -35,4 +35,32 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // Initialize with 'all' category
     filterPhotos('all');
+});
+
+document.addEventListener('DOMContentLoaded', function() {
+    const modal = document.getElementById('photo-modal');
+    const modalImg = document.getElementById('modal-img');
+    const closeModal = document.querySelector('.close-modal');
+    const viewFullBtns = document.querySelectorAll('.view-full-btn');
+
+    viewFullBtns.forEach(btn => {
+        btn.addEventListener('click', function(e) {
+            e.stopPropagation();
+            const imgSrc = btn.getAttribute('data-full');
+            modalImg.src = imgSrc;
+            modal.style.display = 'flex';
+        });
+    });
+
+    closeModal.addEventListener('click', function() {
+        modal.style.display = 'none';
+        modalImg.src = '';
+    });
+
+    modal.addEventListener('click', function(e) {
+        if (e.target === modal) {
+            modal.style.display = 'none';
+            modalImg.src = '';
+        }
+    });
 }); 

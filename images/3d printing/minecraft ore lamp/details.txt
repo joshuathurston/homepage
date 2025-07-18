@@ -1,0 +1,5 @@
+3D model: complete minecraft Ore lamp by mrspiffy
+Link: thingiverse.com/thing:4770169
+Print time: ~40 hours for 10 parts
+Electronics: neopixel ring light and elegoo nano microcontroller
+This was a gift for my nephews bday took amlot more time and work then I expected but turned out pretty good.

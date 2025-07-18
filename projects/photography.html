@@ -40,8 +40,14 @@
         <section class="photo-grid">
             <!-- Photo Card Template -->
             <article class="photo-card" data-category="landscape">
-                <div class="photo-image">
+                <div class="photo-image photo-hover-container">
                     <img src="https://lh3.googleusercontent.com/pw/AP1GczMS4GaF9iI7TIYLNtFe-X7TVXNRz-8ZQjLKr_5fY4MYbfqyEd--EgmU2CPXlkumtnBP2yA24nlbRsSdaZ_TGZpdSHYDVues01VyacO5Xvjj_K7bddWSZ4X-f0kEuaIKkFGTQcfgLX_9UMdNkEcszGUL=w1620-h911-s-no-gm?authuser=0" alt="Landscape Photo">
+                    <div class="photo-specs-overlay">
+                        <div class="spec-item"><strong>Camera:</strong> Model</div>
+                        <div class="spec-item"><strong>Lens:</strong> XXmm</div>
+                        <div class="spec-item"><strong>Settings:</strong> f/X.X, 1/XXX, ISO XXX</div>
+                    </div>
+                    <button class="view-full-btn" data-full="https://lh3.googleusercontent.com/pw/AP1GczMS4GaF9iI7TIYLNtFe-X7TVXNRz-8ZQjLKr_5fY4MYbfqyEd--EgmU2CPXlkumtnBP2yA24nlbRsSdaZ_TGZpdSHYDVues01VyacO5Xvjj_K7bddWSZ4X-f0kEuaIKkFGTQcfgLX_9UMdNkEcszGUL=w1620-h911-s-no-gm?authuser=0" title="View Full Photo"><i class="fas fa-expand"></i></button>
                 </div>
                 <div class="photo-content">
                     <h2>Photo Title</h2>
@@ -51,23 +57,18 @@
                         <span class="tag">Sunset</span>
                     </div>
                     <p>Description of the photo, including location, camera settings, and the story behind the image.</p>
-                    <div class="photo-specs">
-                        <div class="spec-item">
-                            <strong>Camera:</strong> Model
-                        </div>
-                        <div class="spec-item">
-                            <strong>Lens:</strong> XXmm
-                        </div>
-                        <div class="spec-item">
-                            <strong>Settings:</strong> f/X.X, 1/XXX, ISO XXX
-                        </div>
-                    </div>
                 </div>
             </article>
 
             <article class="photo-card" data-category="landscape">
-                <div class="photo-image">
+                <div class="photo-image photo-hover-container">
                     <img src="https://lh3.googleusercontent.com/pw/AP1GczO22CH-J5GtXvS3yXhpnrDDPXGBr0aup34yjYfJKKwQPI_TiURpjEMFSBSG8-tHG8mX1KQ_mdDolfISXDzsH_Bos1T-wvJmar9cOD2wfqCgGSXQqhuLNR17nbSWzdfV3eMff4tsslWbaL6PuMkDOv_Y=w1620-h911-s-no-gm?authuser=0" alt="Landscape Photo">
+                    <div class="photo-specs-overlay">
+                        <div class="spec-item"><strong>Camera:</strong> Model</div>
+                        <div class="spec-item"><strong>Lens:</strong> XXmm</div>
+                        <div class="spec-item"><strong>Settings:</strong> f/X.X, 1/XXX, ISO XXX</div>
+                    </div>
+                    <button class="view-full-btn" data-full="https://lh3.googleusercontent.com/pw/AP1GczO22CH-J5GtXvS3yXhpnrDDPXGBr0aup34yjYfJKKwQPI_TiURpjEMFSBSG8-tHG8mX1KQ_mdDolfISXDzsH_Bos1T-wvJmar9cOD2wfqCgGSXQqhuLNR17nbSWzdfV3eMff4tsslWbaL6PuMkDOv_Y=w1620-h911-s-no-gm?authuser=0" title="View Full Photo"><i class="fas fa-expand"></i></button>
                 </div>
                 <div class="photo-content">
                     <h2>Photo Title</h2>
@@ -77,17 +78,6 @@
                         <span class="tag">Floral</span>
                     </div>
                     <p>Flowers</p>
-                    <div class="photo-specs">
-                        <div class="spec-item">
-                            <strong>Camera:</strong> Model
-                        </div>
-                        <div class="spec-item">
-                            <strong>Lens:</strong> XXmm
-                        </div>
-                        <div class="spec-item">
-                            <strong>Settings:</strong> f/X.X, 1/XXX, ISO XXX
-                        </div>
-                    </div>
                 </div>
             </article>
             <!-- Add more photo cards as needed -->
@@ -100,5 +90,11 @@
 
     <script src="../script.js"></script>
     <script src="photography.js"></script>
+
+    <!-- Modal for full photo view -->
+    <div id="photo-modal" class="photo-modal">
+        <span class="close-modal">&times;</span>
+        <img class="modal-content" id="modal-img" src="" alt="Full Photo">
+    </div>
 </body>
 </html> 

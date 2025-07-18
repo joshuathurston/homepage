@@ -1,0 +1,3 @@
+3d Mode: case for a stm32f3discovery board
+Print time: 4 hours
+needed a case that wasn't just the products initial shipping container
